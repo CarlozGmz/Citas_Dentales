@@ -72,7 +72,7 @@ void registrar_citas() {
 
 int leer_archivo() {
 
-	ifstream archivo("Citas_Dentaleeeees.txt");
+	ifstream archivo("Citas_Dentales.txt");
 	if (archivo) {
 		string linea;
 		string descripcion_trat;
@@ -177,14 +177,14 @@ int main() {
 				case 3:
 					cout << "Ha elegido Extraccion de muelas\n";
 					nueva_cita->tratamiento = "Extraccion de Muelas:\nExtraccion de muelas de juicio u otras piezas bucales\nPrecio unitario:100 por muela";
-					cout << "¿Cuantas muelas extraera?\n";
+					cout << "Â¿Cuantas muelas extraera?\n";
 					cin >> nueva_cita->cantidad_tratamiento;
 					nueva_cita->precio = nueva_cita->cantidad_tratamiento * 100;
 					break;
 				case 4:
 					cout << "Ha elegio Implantes dentales\n";
-					nueva_cita->tratamiento = "Implantes Dentales:\nSustucion de piezas bucales dañadas con la intencion de ser a largo plazo\nPrecio unitario:8000";
-					cout << "¿Cuantos implantes necesitara?\n";
+					nueva_cita->tratamiento = "Implantes Dentales:\nSustucion de piezas bucales daÃ±adas con la intencion de ser a largo plazo\nPrecio unitario:8000";
+					cout << "Â¿Cuantos implantes necesitara?\n";
 					cin >> nueva_cita->cantidad_tratamiento;
 					nueva_cita->precio = nueva_cita->cantidad_tratamiento * 8000;
 					break;
@@ -237,7 +237,7 @@ int main() {
 						}
 							
 
-					cout << "¿Desea agendar otra cita?\nSi=1  No=0\n";
+					cout << "Â¿Desea agendar otra cita?\nSi=1  No=0\n";
 					cin >> opc_trat;
 				}
 
@@ -308,14 +308,14 @@ int main() {
 						case 3:
 							cout << "Ha elegido Extraccion de muelas\n";
 							cita_auxiliar->tratamiento = "Extraccion de Muelas:\nExtraccion de muelas de juicio u otras piezas bucales\nPrecio:100 por muela";
-							cout << "¿Cuantas muelas extraera?\n";
+							cout << "Â¿Cuantas muelas extraera?\n";
 							cin >> cita_auxiliar->cantidad_tratamiento;
 							cita_auxiliar->precio = cita_auxiliar->cantidad_tratamiento * 100;
 							break;
 						case 4:
 							cout << "Ha elegio Implantes dentales\n";
-							cita_auxiliar->tratamiento = "Implantes Dentales:\nSustucion de piezas bucales dañadas con la intencion de ser a largo plazo\nPrecio:8000";
-							cout << "¿Cuantos implantes necesitara?\n";
+							cita_auxiliar->tratamiento = "Implantes Dentales:\nSustucion de piezas bucales daÃ±adas con la intencion de ser a largo plazo\nPrecio:8000";
+							cout << "Â¿Cuantos implantes necesitara?\n";
 							cin >> cita_auxiliar->cantidad_tratamiento;
 							cita_auxiliar->precio = cita_auxiliar->cantidad_tratamiento * 8000;
 							break;
